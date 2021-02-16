@@ -1,0 +1,6 @@
+(let fibs (arr 0 1))
+
+(while (< (len fibs) 31)
+  (push! fibs (+ [fibs -1] [fibs -2])))
+
+(prn [fibs -1])
